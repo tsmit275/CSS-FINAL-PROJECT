@@ -1,0 +1,170 @@
+body {
+    background-color: lightgrey;
+}
+
+ul.fa-ul li {
+    word-wrap: normal;
+}
+
+nav {
+    background-color: navy;
+    justify-content: left;
+    align-content: center;
+    width: 100%;
+    height: 50px;
+}
+
+ul {
+    width: 100%;
+    list-style: none;
+    align-content: left;
+}
+
+.top-navbar {
+    width: 100%;
+    background: navy;
+    text-align: center;
+}
+
+.nfl-logo {
+    position: relative;
+    height: 40px;
+}
+
+li {
+
+    display: inline-block;
+    padding: 5px;
+}
+
+.left {
+    float: left;       
+}
+.middle {
+    position: relative;
+}
+.right {
+    float: right;
+}
+
+nav a {
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-decoration: none;
+    font-size: smaller;
+    display: none;
+}
+
+a.active .top-navbar:hover {
+    text-decoration: underline;
+    color: white;
+    transition: .5s;
+}
+
+.checkbtn {
+    display: block;
+    font-size: 30px;
+    color: white;
+    float: right;
+    margin-right: 40px;
+    cursor: pointer;
+}
+
+#check {
+    display: none;
+}
+
+#check:checked ~ .top-navbar li {
+    display: list-item;
+    flex-direction: column;
+}
+
+button {
+    border-radius: 7px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}        
+
+.card {
+    margin: 10px;
+}
+
+#tabs-section {
+    background-color: white;
+    justify-content: left;
+    align-content: center;
+    margin: 10px;
+    border: 2px solid white;
+    border-radius: 5px;
+}
+
+#tabs-section .tab-pane {
+    padding-right: 2em;
+}    
+
+#nav-tab {
+    background-color: white;
+    justify-content: space-evenly;
+}
+
+.nav nav-tabs {
+    background-color: white;
+    display: inline;
+}
+
+.nav-link {
+    background-color: white;
+}
+
+.tab-content {
+    background-color: white;
+}
+
+.more-news {
+    color: navy;
+    justify-content: center;
+    margin: 10px;
+}
+
+@media (min-width: 600px) {
+    .container {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .card {
+        max-width: 60%;
+        margin: 10px;
+        flex-grow: 2;
+        min-width: 400px;
+    }
+    #tabs-section {
+        background-color: white;
+        justify-content: left;
+        align-content: center;
+        margin: 10px;
+        width: 400px;
+        flex-grow: 1;
+    }
+}
+
+@media (min-width: 1100px){    
+    #check {
+        display: none;
+    }
+    .checkbtn {
+        display: none;
+    }
+    .top-navbar {
+        display: contents;
+        width: 100%;
+        list-style: none;
+        align-content: center;
+    }
+    nav a {
+        display: contents;
+    }
+}    

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="main.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/2799bb5d04.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <ul class="top-navbar">
+            <div class="topnav">
+                <li class="left"><img class="nfl-logo" src="./assets/nfl-logo2.png" alt="NFL logo"/></li>
+                <li class="left"><a href="#">News</a></li>
+                <li class="left"><a href="#">Scores</a></li>
+                <li class="left"><a href="#">Schedule</a></li>
+                <li class="left"><a href="#">Videos</a></li>
+                <li class="left"><a href="#">Teams</a></li>
+                <li class="left"><a href="#">Players</a></li>
+                <li class="left"><a href="#">Stats</a></li>
+                <li class="left"><a href="#">Standings</a></li>
+                <li class="left"><a href="#">Training Camp</a></li>
+                <li class="middle"><a href="#">...</a></li>
+                <li class="middle"><img src="./assets/NFLplus-logo.png" alt="NFL logo" style="width: 50px"/></li>
+                <li class="middle" style="color: white"><a href="#">Network</a></li>
+                <li class="right"><a href="#"><button>Sign In</button></a>
+                <li class="right"><a href="#">Shop</a></li>
+                <li class="right"><a href="#">Experiences</a></li>
+                <li class="right"><a href="#">Tickets</a></li>
+                <li class="right"><a href="#">Fantasy</a></li>
+            </div>    
+        </ul>
+    </nav>
+    <div class="container">
+        <div class="card">
+            <img src="./assets/NFLimage.jpg" class="card-img-top" alt="Browns vs. Eagles pic">
+            <div class="card-body">
+                <h3 class="card-title"><b>Browns-Eagles preview</b></h3>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure accusantium laboriosam pariatur dicta minus reiciendis minima numquam eveniet? Nisi, doloribus. Explicabo ipsa ducimus reprehenderit distinctio, quibusdam consequatur rerum iste magnam?</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+        </div>
+        <div id="tabs-section">
+            <nav class="nav-tabs">
+                <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                    <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">News</button>
+                    <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Camps</button>
+                    <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">My Team</button>
+                </div>
+            </nav>
+                <div class="tab-content" id="nav-tabContent">
+                    <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                        <ul class="tab-list fa-ul" id="tab-list">
+                            <li><span class="fa-li"><i class="fa-regular fa-file-lines"></i></span>Colts RB Taylor excused from camp for second time</li>
+                            <li><span class="fa-li"><i class="fa-regular fa-file-lines"></i></span>Titans WR Burks (LCL sprain) likely to miss a few wks</li>
+                            <li><span class="fa-li"><i class="fa-regular fa-file-lines"></i></span>Raiders' Crosby, Rams' Akers get into prax. skirmish</li>
+                            <li><span class="fa-li"><i class="fa-regular fa-file-lines"></i></span>Preseason Wk 2: 1 thing to look for from each team</li>
+                            <li><span class="fa-li"><i class="fa-regular fa-file-lines"></i></span>'Madden 24' designer: 'Elite blockers' to stick out</li>
+                            <li><span class="fa-li"><i class="fa-regular fa-file-lines"></i></span>Two-time champ Parker finalist for HOF Class of '24</li>
+                            <li><span class="fa-li"><i class="fa-regular fa-file-lines"></i></span>Jets QB Rodgers on O-line: 'It's a work in progress'</li>
+                            <li><span class="fa-li"><i class="fa-regular fa-file-lines"></i></span>Roundup: Lions WRs injured; Vikings WR in protocol</li>
+                            <li><span class="fa-li"><i class="fa-regular fa-file-lines"></i></span>18 DO's and DON'Ts for '23 fantasy football drafts</li>
+                        </ul>
+                    </div>
+                    <div class="more-news">    
+                        <p><b>More News</b></p>
+                    </div>
+                    <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">...</div>
+                    <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">...</div>
+                </div>
+        </div>
+    </div>
+</body>
+</html>
